@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <div class="container">
+
+        <h1>ROCK PAPER SCISSORS</h1>
+
+        <!-- Score -->
+        <div class="score-board">
+
+            <div class="score-card">
+                <h2>YOU</h2>
+                <span id="playerScore">0</span>
+            </div>
+
+            <div class="score-card">
+                <h2>CPU</h2>
+                <span id="cpuScore">0</span>
+            </div>
+
+        </div>
+
+        <!-- Arena -->
+        <div class="arena">
+
+            <!-- Player -->
+            <div class="player-side">
+
+                <div class="profile">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png"
+                        class="avatar">
+
+                    <h2>You</h2>
+
+                </div>
+
+                <div id="playerHand" class="hand">✊</div>
+
+            </div>
+
+
+            <!-- Center -->
+            <div class="center-box">
+
+                <div id="countdown">3</div>
+
+                <div id="vs">VS</div>
+
+                <div id="result"></div>
+
+            </div>
+
+
+            <!-- CPU -->
+            <div class="cpu-side">
+
+                <div class="profile">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+                        class="avatar">
+
+                    <h2>Computer</h2>
+
+                </div>
+
+               <div id="cpuHand" class="hand">✊</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Choice Buttons -->
+        <div class="choices">
+
+            <button class="choice selected"
+                data-choice="rock">
+                ✊ Rock
+            </button>
+
+            <button class="choice"
+                data-choice="paper">
+                ✋ Paper
+            </button>
+
+            <button class="choice"
+                data-choice="scissors">
+                ✌️ Scissors
+            </button>
+
+        </div>
+
+        <!-- Play Button -->
+        <div class="play-area">
+
+            <button id="playBtn">
+                ▶ PLAY
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
