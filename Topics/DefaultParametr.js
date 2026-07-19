@@ -1,4 +1,4 @@
-function sum(a,b=3){
+function sum(a,b=3){// b is a default parameter
     return a+b;
 
 }
