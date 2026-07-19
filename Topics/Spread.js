@@ -10,3 +10,10 @@ function spread2(...arr) {
 }
 
 console.log(spread2(5, 12, 3, 8));
+//object Literals
+const data ={
+    email:"anjali@gmail.com",
+    password:"abcd"
+}
+const datacopy={...data};
+console.log(datacopy);
